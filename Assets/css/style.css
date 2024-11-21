@@ -1,0 +1,6 @@
+#menuContainer {
+    width: 300px; /* o el ancho deseado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el texto si aplica */
+  }
+  
