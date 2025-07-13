@@ -22,7 +22,17 @@
         require_once($view_footer);
     }
     
-
+    function headerTienda($data="")
+    {
+        $view_header = "Views/Template/header_tienda.php";
+        require_once($view_header);
+    }
+    
+    function footerTienda($data="")
+    {
+        $view_footer = "Views/Template/footer_tienda.php";
+        require_once($view_footer);
+    }
     
 	//Muestra información formateada
 	function dep($data)
@@ -105,5 +115,14 @@
         return $cantidad;
     }
     
-
+    function uploadImage(array $data, string $name){
+        $url_temp = $data['tmp_name'];
+        $destino = 'Assets/images/uploads/' . $name;
+        $move = move_uploaded_file($url_temp, $destino);
+        return $move;
+    }
+    
+    function deleteFile(string $name){
+        unlink('Assets/images/uploads/'.$name);
+    }
  ?>

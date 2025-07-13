@@ -3,7 +3,7 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?= media(); ?>/images/avatar.png" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">Fernando Zapata</p>
+          <p class="app-sidebar__user-name"></p>
           <p class="app-sidebar__user-designation">Administrador</p>
         </div>
       </div>
@@ -33,65 +33,36 @@
                 <i class="icon fa fa-circle-o"></i> Roles
               </a>
             </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/permisos">
-                <i class="icon fa fa-circle-o"></i> Permisos
-              </a>
-            </li>
+           
           </ul>
-        </li>
+            </li>
+      <!-- Inventario -->
+      <li class="treeview">
+        <a class="app-menu__item" href="#" data-toggle="treeview">
+          <i class="app-menu__icon fa fa-archive" aria-hidden="true"></i>
+          <span class="app-menu__label">Inventario</span>
+          <i class="treeview-indicator fa fa-angle-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li>
+            <a class="treeview-item" href="<?= base_url(); ?>/categorias">
+              <i class="icon fa fa-circle-o"></i> Categoría
+            </a>
+          </li>
+          <li>
+            <a class="treeview-item" href="<?= base_url(); ?>/productos">
+              <i class="icon fa fa-circle-o"></i> Menú
+            </a>
+          </li>
+        </ul>
+      </li>
 
-        <li class="treeview">
-          <a class="app-menu__item" href="#" data-toggle="treeview">
-            <i class="app-menu__icon fa fa-archive" aria-hidden="true""></i>
-            <span class="app-menu__label">Productos</span>
-            <i class="treeview-indicator fa fa-angle-right">
+      <!-- Logout -->
+      <li>
+        <a class="app-menu__item" href="<?= base_url(); ?>/logout">
+          <i class="app-menu__icon fa fa-sign-out" aria-hidden="true"></i>
+          <span class="app-menu__label">Logout</span>
+        </a>
+      </li>
 
-            </i>
-          </a>
-          <ul class="treeview-menu">
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/usuarios">
-                <i class="icon fa fa-circle-o"></i> Bobas
-              </a>
-            </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/roles">
-                <i class="icon fa fa-circle-o"></i> Cafe frio
-              </a>
-            </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/permisos">
-                <i class="icon fa fa-circle-o"></i> Cafe caliente
-              </a>
-            </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/permisos">
-                <i class="icon fa fa-circle-o"></i> Paninis
-              </a>
-            </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/permisos">
-                <i class="icon fa fa-circle-o"></i> Postres
-              </a>
-            </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/permisos">
-                <i class="icon fa fa-circle-o"></i> Perlas
-              </a>
-            </li>
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/permisos">
-                <i class="icon fa fa-circle-o"></i> Extras
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="app-menu__item" href="<?= base_url(); ?>/logout">
-            <i class="app-menu__icon fa fa-sign-out" aria-hidden="true"></i>
-            <span class="app-menu__label">Logout</span>
-          </a>
-        </li>
-      </ul>
     </aside>

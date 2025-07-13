@@ -8,7 +8,7 @@
 
 	//Datos de conexión a Base de Datos
 	const DB_HOST = "localhost";
-	const DB_NAME = "tienda";
+	const DB_NAME = "db_sistema";
 	const DB_USER = "root";
 	const DB_PASSWORD = "";
 	const DB_CHARSET = "charset=utf8";
@@ -18,7 +18,13 @@
 	const SPM = ",";
 
 	//Simbolo de moneda
-	const SMONEY = "Q";
+	const SMONEY = "$";
+
+	//Slider de categoria
+	const CAT_SLIDER = "1,2,3,4,5";
+
+	//Slider de categoria
+	const CAT_BANNER = "6,7,9";
 
 	
 
